@@ -9,3 +9,17 @@ python run.py
 ```
 
 ![overview of app](/assets/overview.gif/)
+
+## Dockerhub
+
+There's a docker image of this project at [here](https://cloud.docker.com/repository/docker/cjadkins/sb-admin-2-dash/), which you can easily run with
+
+```
+docker run -p 8050:8050 cjadkins/sb-admin-2-dash
+```
+
+if you'd like to test the app before using the template.
+
+## License
+
+Do what you will with this, hopefully it helps. MIT
