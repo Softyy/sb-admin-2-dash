@@ -7,3 +7,5 @@ To run the template, just install dash or install from the included requirements
 ```
 python run.py
 ```
+
+![overview of app](/assets/overview.gif/)
