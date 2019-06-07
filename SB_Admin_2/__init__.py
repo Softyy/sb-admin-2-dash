@@ -53,3 +53,7 @@ with open(index_path) as index_fs:
 app.config['suppress_callback_exceptions'] = True
 
 app.layout = render
+
+from SB_Admin_2.router import *
+
+from SB_Admin_2.toggle_sidebar import *

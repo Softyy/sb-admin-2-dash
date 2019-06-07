@@ -1,0 +1,15 @@
+#ignore editor configs
+.vscode
+.vs
+
+#ignore venv
+venv
+
+#ignore python cache
+__pycache__
+
+#ignore non code
+assets
+LICENSE
+README.md
+run.py
