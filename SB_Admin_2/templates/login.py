@@ -38,13 +38,14 @@ def render():
                                     className="form-group",
                                     children=html.Div(
                                         className="custom-control custom-checkbox small",
-                                        # children=dcc.Checklist(
-                                        #     id="customCheck",
-                                        #     options={'label': 'Remember Me',
-                                        #              'value': 'remember-me'},
-                                        #     className="custom-control-input",
-                                        #     labelClassName="custom-control-label"
-                                        # )
+                                        children=dcc.Checklist(
+                                            id="customCheck",
+                                            options=[{'label': 'Remember Me',
+                                                     'value': 'remember-me'}],
+                                            values=[],
+                                            #inputClassName="custom-control-input",
+                                            #labelClassName="custom-control-label"
+                                        )
                                     )
                                 ),
                                 dcc.Link(
