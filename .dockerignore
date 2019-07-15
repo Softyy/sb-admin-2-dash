@@ -13,3 +13,6 @@ assets
 LICENSE
 README.md
 run.py
+
+#ignore heroku 
+heroku.yml
