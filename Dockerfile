@@ -1,5 +1,8 @@
 FROM python:3.7-alpine
 
+ARG PORT=8050
+ENV PORT=${PORT}
+
 LABEL version="1.0" description="SB Admin 2 Dash" maintainer="chris@cjadkins.com"
 
 RUN mkdir -p /app
@@ -13,4 +16,4 @@ COPY . .
 
 EXPOSE 8050
 
-CMD ["gunicorn","-w","2","--bind",":8050","SB_Admin_2:app.server"]
+CMD gunicorn -w 2 --bind :${PORT} SB_Admin_2:app.server
