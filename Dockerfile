@@ -14,6 +14,6 @@ RUN pip3 install --no-cache-dir gunicorn
 
 COPY . .
 
-EXPOSE 8050
+EXPOSE ${PORT}
 
 CMD gunicorn -w 2 --bind :${PORT} SB_Admin_2:app.server
