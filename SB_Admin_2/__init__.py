@@ -44,6 +44,8 @@ app = dash.Dash(__name__,
                 external_scripts=external_scripts,
                 external_stylesheets=external_stylesheets)
 
+app.title = "SB Admin 2 Dash"
+
 # Sets the html template fo the dash application
 file_path = os.path.dirname(os.path.realpath(__file__))
 index_path = os.path.join(file_path, 'templates', 'index.html')
